@@ -10,9 +10,22 @@ const Bookings = async () => {
   if (!session?.user) {
     return notFound()
   }
+  const bookings = await db.booking.findMany({
+    where: {
+      userId: (session?.user as any).id,
+    },
+    include: {
+      service: {
+        include: {
+          barbershop: true,
+        },
+      },
+    },
+  })
+
   const confirmedBookings = await db.booking.findMany({
     where: {
-      userId: (session?.user as unknown as { id: string }).id,
+      userId: (session?.user as any).id,
 
       date: {
         gte: new Date(),
@@ -32,7 +45,7 @@ const Bookings = async () => {
 
   const concludedBookings = await db.booking.findMany({
     where: {
-      userId: (session?.user as unknown as { id: string }).id,
+      userId: (session?.user as any).id,
 
       date: {
         lt: new Date(),

@@ -1,6 +1,6 @@
 "use client"
 
-import { Prisma } from "@prisma/client"
+import { Booking, Prisma } from "@prisma/client"
 import { Avatar, AvatarImage } from "./ui/avatar"
 
 import { Badge } from "./ui/badge"
@@ -58,7 +58,7 @@ const BookingItem = ({ booking }: BookingItemProps) => {
       await deleteBooking(booking.id)
       setIsSheetOpen(false)
       toast.success("Reserva cancelada com sucesso !")
-    } catch {
+    } catch (error) {
       toast.error("Erro ao cancelar agendamento")
     }
   }

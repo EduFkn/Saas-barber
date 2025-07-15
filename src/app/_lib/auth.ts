@@ -20,12 +20,7 @@ export const authOptions : AuthOptions = {
        session.user = {
         ...session.user,
         id: user.id,
-       } as unknown as {
-        id: string;
-        email: string;
-        image: string;
-        name: string;
-       };
+       } as any
 
        return session
       },

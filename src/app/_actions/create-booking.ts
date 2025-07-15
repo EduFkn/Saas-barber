@@ -25,7 +25,7 @@ if (params.date <= new Date()) {
 }
 
 await db.booking.create({
-    data:{...params, userId: (user.user as unknown as { id: string }).id},
+    data:{...params, userId: (user.user as any).id},
 })
 
 revalidatePath("/barbershops/[id]")
