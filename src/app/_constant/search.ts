@@ -5,7 +5,7 @@ interface QuickSearchOption {
 
 export const quickSearchOptions: QuickSearchOption[] = [
   {
-    imageUrl: "/tesoura-icon.svg",
+    imageUrl: "/tesoura-icon.svg" ,
     title: "Cabelo",
   },
   {

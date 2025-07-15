@@ -17,7 +17,7 @@ const Header = () => {
 
         <Sheet>
           <SheetTrigger asChild>
-            <Button className="p-4" variant="outline" size="icon">
+            <Button className="rounded-xl p-3" variant="outline" size="default">
               <MenuIcon />
             </Button>
           </SheetTrigger>

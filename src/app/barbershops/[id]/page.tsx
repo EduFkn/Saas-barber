@@ -1,7 +1,7 @@
 import PhoneItem from "@/app/_components/phone-item"
 import ServiceItem from "@/app/_components/service-item"
 import SidebarSheet from "@/app/_components/sidebar-button"
-import SidebarButton from "@/app/_components/sidebar-button"
+
 import { Button } from "@/app/_components/ui/button"
 import { Sheet, SheetTrigger } from "@/app/_components/ui/sheet"
 import { db } from "@/app/_lib/prisma"
@@ -54,9 +54,9 @@ const BarbershopPage = async ({ params }: BarbershopPageProps) => {
         <Sheet>
           <SheetTrigger asChild>
             <Button
-              className="absolute right-4 top-4 p-4"
+              className="absolute right-4 top-4 rounded-xl p-3"
               variant="outline"
-              size="icon"
+              size="default"
             >
               <MenuIcon />
             </Button>
@@ -89,9 +89,9 @@ const BarbershopPage = async ({ params }: BarbershopPageProps) => {
         <div className="space-y-3">
           {barbershop.services.map((service) => (
             <ServiceItem
-              barbershop={barbershop}
+              barbershop={JSON.parse(JSON.stringify(barbershop))}
               key={service.id}
-              service={service}
+              service={JSON.parse(JSON.stringify(service))}
             />
           ))}
         </div>
