@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FKN Barber 💈
 
-## Getting Started
+Plataforma moderna de agendamento para barbearias, desenvolvida com as melhores tecnologias do mercado.
 
-First, run the development server:
+## ✨ Features
+
+- **Busca rápida:** Encontre serviços como Corte, Barba, Massagem, Sobrancelha e mais, com ícones ilustrativos.
+- **Agendamento online:** Reserve seu horário em barbearias recomendadas e populares.
+- **Autenticação segura:** Login com NextAuth.
+- **Visual moderno:** UI responsiva, dark mode, animações e componentes Radix UI.
+- **Banco de dados real:** PostgreSQL com seed de barbearias e serviços.
+- **Deploy fácil:** Pronto para Vercel.
+
+## 🖼️ Preview
+
+![Preview do FKN Barber](public/Banner01.svg)
+
+## 🚀 Tecnologias
+
+- [Next.js 14](https://nextjs.org/)
+- [React 18](https://react.dev/)
+- [Prisma ORM](https://www.prisma.io/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [NextAuth](https://next-auth.js.org/)
+- [Radix UI](https://www.radix-ui.com/)
+- [Lucide Icons](https://lucide.dev/)
+
+## ⚡ Como rodar localmente
 
 ```bash
+git clone https://github.com/seu-usuario/fkn-barber.git
+cd fkn-barber
+npm install
+# Configure o .env com sua DATABASE_URL
+npx prisma migrate deploy
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` – Inicia o ambiente de desenvolvimento
+- `npm run build` – Build de produção (inclui prisma generate)
+- `npm run start` – Inicia o servidor de produção
 
-## Learn More
+## 🗃️ Estrutura
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app/` – Páginas e componentes principais
+- `src/app/_components/` – Componentes reutilizáveis (UI, Header, Cards, etc)
+- `src/app/_constant/search.ts` – Opções de busca rápida com ícones SVG
+- `prisma/` – Schema, seed e migrations do banco
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👨‍💻 Autor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Feito com 💙 por [Seu Nome](https://www.linkedin.com/in/seu-perfil)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Sinta-se à vontade para adaptar, traduzir ou incrementar! Se quiser, posso gerar o arquivo README.md já pronto para você.
