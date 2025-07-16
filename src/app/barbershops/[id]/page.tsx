@@ -58,7 +58,7 @@ const BarbershopPage = async ({ params }: BarbershopPageProps) => {
               variant="outline"
               size="default"
             >
-              <MenuIcon />
+              <MenuIcon className="h-[21px]" />
             </Button>
           </SheetTrigger>
 
