@@ -56,7 +56,7 @@ const Home = async () => {
               key={option.title}
               asChild
             >
-              <Link href={`/barbershops?service=${option.title}`}>
+              <Link prefetch href={`/barbershops?service=${option.title}`}>
                 <Image
                   src={option.imageUrl}
                   width={16}

@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <Card>
       <CardContent className="flex flex-row items-center justify-between p-5">
-        <Link href="/">
+        <Link prefetch href="/">
           <Image alt="logo" src="/Logo.svg" height={18} width={120} />
         </Link>
 

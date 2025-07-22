@@ -12,7 +12,7 @@ import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog"
 import { signOut, useSession } from "next-auth/react"
 import SignInDialog from "./sign-in-dialog"
 
-const SidebarSheet = () => {
+const SidebarSheet = () => {      
   const { data } = useSession()
 
   const handleLogoutClick = () => signOut()
@@ -58,7 +58,7 @@ const SidebarSheet = () => {
             className="flex justify-start gap-3 rounded-md px-3 py-4"
             variant="ghost"
           >
-            <Link className="flex gap-2" href="/">
+            <Link prefetch className="flex gap-2" href="/">
               <HomeIcon size={18} />
               Inicio
             </Link>
@@ -69,7 +69,7 @@ const SidebarSheet = () => {
           variant="ghost"
           asChild
         >
-          <Link className="flex gap-2" href="/bookings">
+          <Link prefetch className="flex gap-2" href="/bookings">
             <Calendar1Icon size={18} />
             Agendamentos
           </Link>
@@ -84,7 +84,7 @@ const SidebarSheet = () => {
               variant="ghost"
               asChild
             >
-              <Link href={`/barbershops?service=${option.title}`}>
+              <Link prefetch href={`/barbershops?service=${option.title}`}>
                 <Image
                   src={option.imageUrl}
                   alt={option.title}

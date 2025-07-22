@@ -17,8 +17,8 @@ Plataforma moderna de agendamento para barbearias, desenvolvida com as melhores 
 
 ## 🚀 Tecnologias
 
-- [Next.js 14](https://nextjs.org/)
-- [React 18](https://react.dev/)
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
 - [Prisma ORM](https://www.prisma.io/)
 - [PostgreSQL](https://www.postgresql.org/)
 - [TailwindCSS](https://tailwindcss.com/)
