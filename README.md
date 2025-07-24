@@ -13,7 +13,7 @@ Plataforma moderna de agendamento para barbearias, desenvolvida com as melhores 
 
 ## 🖼️ Preview
 
-![Preview do FKN Barber](public/Banner01.svg)
+![Preview do FKN Barber](https://fkn-barber.vercel.app/)
 
 ## 🚀 Tecnologias
 
@@ -54,7 +54,7 @@ Acesse [http://localhost:3000](http://localhost:3000)
 
 ## 👨‍💻 Autor
 
-Feito com 💙 por [Seu Nome](https://www.linkedin.com/in/seu-perfil)
+Feito com 💙 por [Eduardo Almeida](https://www.linkedin.com/in/eduardo-cardoso-de-almeida/)
 
 ---
 
